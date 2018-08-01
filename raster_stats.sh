@@ -1,3 +1,8 @@
+############################################################
+# The batch scripts summits job that runs the python script
+# "zonal_stats.py"
+# July-2018
+############################################################
 #!/bin/bash
 
 #SBATCH -p gpu
@@ -11,6 +16,9 @@
 
 # Load Conda Env
 module load anaconda
+
+# Activate Environment
 source activate CondaEnvP2.7
 
-python raster_stats_sfs.py
+# call python & the script
+python raster_stats.py

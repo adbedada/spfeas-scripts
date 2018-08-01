@@ -1,3 +1,10 @@
+###########################################################
+# The spfeas commands calculate Fourier a tif file
+# Fourier is calcuated at block 1, scales 31, 51 & 71
+# Setting the -vis-order to rgb creates a gray scale layer
+# June-2018
+##########################################################
+
 #!/bin/bash
 
 #SBATCH -p gpu

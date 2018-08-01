@@ -1,3 +1,9 @@
+###########################################################
+# The gdal commands crop large image into subsets of images
+# July-2018
+###########################################################
+
+
 #!/bin/bash
 
 #SBATCH -p gpu

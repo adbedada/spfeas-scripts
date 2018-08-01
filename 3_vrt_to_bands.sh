@@ -1,8 +1,7 @@
-###########################################################
-# The gdal commands extract several bands from a vrt file
-# and rename them accordingly. 
-# July-2018
-##########################################################
+####################################################################
+# The gdal commands extract several bands from multi-bands image. 
+# June-2018
+####################################################################
 
 #!/bin/bash
 #SBATCH -p 128gb

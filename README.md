@@ -1,4 +1,4 @@
-This repository contains scripts used for pre-processing a satellite image and extracting various sapatial features.
+This repository contains some of the scripts used for pre-processing a satellite image and extracting various sapatial features.
 
 - Sentinel-2 imagery for Sri Lanka was collected from Google Earth Engine and preprocessed with GDAL. 
    - <a href="https://raw.githubusercontent.com/adbedada/How-tos/master/sentinel-2-from-earth-engine.js"> Download Image from Google Earth Engine</a>

@@ -1,3 +1,9 @@
+###########################################################
+# The rasterstats commands calcuates specific zonal
+# statistical values. The "--prefix" option renames 
+# columns while the "--stats" option specify the metrics
+# July 2018
+############################################################
 #!/bin/bash
 
 #SBATCH -p gpu

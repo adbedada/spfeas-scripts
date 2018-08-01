@@ -1,5 +1,11 @@
-#!/bin/bash
+###########################################################
+# The gdal commands extract several bands from a vrt file
+# and rename them accordingly. 
+# July-2018
+# Adane Bedada
+##########################################################
 
+#!/bin/bash
 #SBATCH -p 128gb
 #SBATCH -J lbpm2b
 #SBATCH -N 1
@@ -9,7 +15,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=adbe@gwu.edu
 
-
+# Set Environment 
 export PATH="/groups/engstromgrp/anaconda3/bin:$PATH"
 source activate Ryan_CondaEnvP2.7
 

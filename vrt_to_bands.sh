@@ -2,7 +2,6 @@
 # The gdal commands extract several bands from a vrt file
 # and rename them accordingly. 
 # July-2018
-# Adane Bedada
 ##########################################################
 
 #!/bin/bash

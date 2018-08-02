@@ -31,27 +31,28 @@ dirs = {
 # names of statistical variables
 metrics = "sum mean std".split()
 
-# Read rasters and join names with path
-rasters = {}
-for n, d in dirs.items():
-    for r in metrics:
-        raster = (os.path.join(d, n+".tif"))
-        name = n + "_" + r
-        rasters[name] = raster
-
 # Specify columns to join from shapefile
 shp_cols =shp.drop(['geometry'],axis=1)
 
+# Read rasters and join names with path
+rasters = {}
+
+for n, d in dirs.items():
+        raster = (os.path.join(d, n+".tif"))
+        rasters[n]= raster
+
+
+#copy metrics
+spfeas_stats = shp_cols.copy()
+
 # Calculate Rasters
-for raster, path in rasters.items():
-    print raster
-    stats = zs(shp, path, nodata=0, stats=metrics)
+for rast, path in rasters.items():
+    stats = zs(shp, path, nodata=-999, stats=metrics)
+    new_colnames = ["{}_{}".format(rast, metric) for metric in metrics]
     df = pd.DataFrame(stats)
-    # Rename names of columns
-    new_colnames = ["{}_{}".format(raster, metric) for metric in metrics]
     df2 = df.rename(columns=dict(zip(metrics, new_colnames)))
-    working_zones = shp_cols.join(df2) # append to working copy
+    spfeas_stats =spfeas_stats.join(df2)
 
 # Save dataframe as csv
-working_zones.to_csv("means_stats_all.csv")
+spfeas_stats.to_csv("mean_stats_all.csv")
 

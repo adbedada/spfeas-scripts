@@ -13,7 +13,7 @@ The features extracted are: PANTEX, HOG, SFS, LAC, NDVI, MEAN, LSR, GABOR, LBPM,
 
 
 - Additional resources: 
-   - <a href="https://raw.githubusercontent.com/adbedada/How-tos/master/gdal-commands.md">Commands for image preprocessing with GDAL</a>
+   - <a href="https://github.com/adbedada/How-tos/blob/master/gdal-commands.md">Commands for image preprocessing with GDAL</a>
    - <a href="https://github.com/adbedada/How-tos/blob/master/lunix-interractive.md"> HPC Interactive computation commands and tips</a>
    - <a href="https://github.com/jgrss/spfeas">SpFeas: Python package used for extracting features <a/> </br>
    - <a href="https://github.com/perrygeo/python-rasterstats">rasterstats: Python package for calculating zonal statistics</a>

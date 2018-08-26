@@ -1,5 +1,5 @@
 This repository contains scripts used for pre-processing a satellite image and extracting various spatial features.
-The features extracted are: PANTEX, HOG, SFS, LAC, NDVI, MEAN, LSR, GABOR, LBPM, ORB and FOURIER. Some of the main tasks and examples of scripts are listed below.
+The features extracted are: PANTEX, HOG, SFS, LAC, NDVI, MEAN, LSR, GABOR, LBPM, ORB and FOURIER. Some of the main tasks and scripts are listed below.
 
 
 <a href="https://github.com/adbeda/summer-research-2018/blob/master/1_download-image.js"> 1_download-image.js </a>: download image from google earth engine </br>

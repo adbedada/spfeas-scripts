@@ -1,4 +1,4 @@
-This repository contains scripts used for pre-processing a satellite image and extracting various sapatial features.
+This repository contains scripts used for pre-processing a satellite image and extracting various spatial features.
 The features extracted are: PANTEX, HOG, SFS, LAC, NDVI, MEAN, LSR, GABOR, LBPM, ORB and FOURIER. The scripts in this repository were used to run each features individually.
 
 
